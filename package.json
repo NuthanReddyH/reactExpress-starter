@@ -1,0 +1,31 @@
+{
+  "name": "reactexpress",
+  "version": "1.0.0",
+  "description": "BoilerPlate for React and Express",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NuthanReddyH/reactExpress.git"
+  },
+  "author": "Nuthan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NuthanReddyH/reactExpress/issues"
+  },
+  "homepage": "https://github.com/NuthanReddyH/reactExpress#readme",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
